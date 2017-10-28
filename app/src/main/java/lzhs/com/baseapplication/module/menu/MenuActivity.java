@@ -54,9 +54,7 @@ public class MenuActivity extends BaseActivity implements CompoundButton.OnCheck
         //设置沉浸式转台栏
         ActivityUtil.setStatusBarBackground(this);
         intiview();
-        initviewpager();
-
-    }
+        initviewpager();}
 
     private void initviewpager() {
        // FragmentStatePagerAdapter
