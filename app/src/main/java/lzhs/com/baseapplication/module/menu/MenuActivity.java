@@ -55,6 +55,9 @@ public class MenuActivity extends BaseActivity implements CompoundButton.OnCheck
         ActivityUtil.setStatusBarBackground(this);
         intiview();
         initviewpager();
+
+
+        System.out.println("媳妇 ，我爱你");
     }
 
     private void initviewpager() {
