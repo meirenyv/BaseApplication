@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lzhs.com.baseapplication">
+
+    <application
+        android:name=".APPApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 应用启动入口页面 -->
+        <activity android:name=".module.StartActivity" />
+        <!-- 账号登陆页面 -->
+        <activity android:name=".module.login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 手机注册页面 -->
+        <activity android:name=".module.login.PhoneRegistActivity" />
+
+        <!-- 新装软件登陆 -->
+        <activity android:name=".module.login.NewAppActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 页面的主菜单页面 -->
+        <activity android:name=".module.menu.MenuActivity"></activity>
+    </application>
+
+</manifest>

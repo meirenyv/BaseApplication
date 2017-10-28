@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6A83A1</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#21B2E0</color>
+    <!--提示hint-->
+    <color name="colorTextHint01">#CBD1D1</color>
+    <!--字体颜色-->
+    <color name="colorText03">#333333</color>
+    <!--细线颜色-->
+    <color name="ColorLine">#DBDBDB</color>
+
+
+
+
+</resources>

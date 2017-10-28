@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lzhs.com.baseapplication.module.login.PhoneRegistActivity">
+    <lzhs.com.library.widget.views.TitleBar
+        android:layout_width="match_parent"
+        app:titleText="手机注册"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleBar"
+        />
+    <LinearLayout
+        android:layout_below="@id/titleBar"
+        android:id="@+id/mLinPhonemumber"
+        android:background="@drawable/shap_btn_ed"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="576px"
+        android:layout_height="87px"
+        android:layout_marginTop="69px"
+
+
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+
+            android:layout_width="26px"
+            android:layout_height="28px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22px"
+            android:src="@mipmap/ic_launcher" />
+
+        <EditText
+            android:id="@+id/mETRegistPhone"
+            android:background="@drawable/shap_btn_ed"
+            style="@style/EditextViewStyle"
+            android:layout_marginLeft="22px"
+            android:hint="手机号"
+            android:inputType="phone"
+            android:maxLength="11" />
+
+        <ImageView
+            android:background="@drawable/shap_btn_ed"
+            android:id="@+id/mIVdeleteinput"
+            android:layout_width="29px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="34px"
+            android:src="@mipmap/icon_fork_b"
+            android:visibility="gone" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="69px"
+        android:id="@+id/mlinCode"
+        android:background="@drawable/shap_btn_ed"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="575px"
+        android:layout_height="87px"
+        android:layout_below="@+id/mLinPhonemumber"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+
+            android:layout_width="26px"
+            android:layout_height="28px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22px"
+            android:src="@mipmap/icon_key" />
+
+        <EditText
+            android:id="@+id/mETRegistPSW"
+            style="@style/EditextViewStyle"
+            android:layout_marginLeft="22px"
+            android:hint="验证码"
+            android:inputType="textPassword"
+            android:maxLength="16" />
+        <TextView
+            android:id="@+id/mTextGetCode"
+            android:background="@drawable/shap_btn_ed"
+            android:text="获取验证码"
+            android:layout_marginRight="30px"
+            android:layout_width="96px"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="17px"
+            android:textColor="#4DD0C8"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginTop="23px"
+        android:textColor="#A8B9D3"
+        android:layout_alignLeft="@id/mlinCode"
+        android:layout_below="@+id/mlinCode"
+        android:textSize="24px"
+        android:gravity="center"
+        android:text="未注册过的手机将自动创建屏频账户"
+        android:layout_width="wrap_content"
+        android:layout_height="24px" />
+    <Button
+        android:id="@+id/mButtonRegis"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        style="@style/StyleButtonCommon"
+        android:layout_marginTop="110px"
+        android:background="@drawable/shap_btn_bg"
+        android:text="@string/text_regist" />
+    <TextView
+        android:id="@+id/mTextConsent"
+        android:layout_below="@id/mButtonRegis"
+        android:textSize="27px"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="点击注册，即表示您同意《屏频使用协议》"
+        android:layout_marginTop="23px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

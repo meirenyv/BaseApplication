@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="lzhs.com.baseapplication.module.menu.MenuActivity">
+    <lzhs.com.library.widget.views.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftColor="#ccc"
+        app:leftText="左边文字"
+        app:rightColor="#9900fe"
+        app:rightIsShow="true"
+        app:rightText="→_→右边"
+        app:titleText="账号登陆" />
+    <azcx9d.com.library.wedgit.view.viewpager.ViewPagerFixed
+        android:id="@+id/mVPFmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </azcx9d.com.library.wedgit.view.viewpager.ViewPagerFixed>
+    <View style="@style/LineStyle" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="99px"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mRBhomepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_homepage_bottom1"
+            android:gravity="center"
+            android:padding="14px"
+            android:text="@string/homepage"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18px" />
+
+        <RadioButton
+            android:id="@+id/mRBmyads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_myads_bottom2"
+            android:gravity="center"
+            android:padding="14px"
+            android:text="@string/myads"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18px" />
+
+        <RadioButton
+            android:id="@+id/mRBmyscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_myscreen_bottom3"
+            android:gravity="center"
+            android:padding="14px"
+            android:text="@string/myscreen"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18px" />
+
+        <RadioButton
+        android:id="@+id/mRBreportforms"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/selector_reportforms_bottom4"
+        android:gravity="center"
+        android:paddingTop="14px"
+        android:text="@string/reportforms"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18px" />
+
+        <RadioButton
+            android:id="@+id/mRBmine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_mine_bottom5"
+            android:gravity="center"
+            android:padding="14px"
+            android:text="@string/mine"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18px" />
+    </RadioGroup>
+</com.zhy.autolayout.AutoLinearLayout>

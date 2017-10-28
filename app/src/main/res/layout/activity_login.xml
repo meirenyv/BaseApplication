@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <lzhs.com.library.widget.views.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftColor="#ccc"
+        app:leftText="左边文字"
+        app:rightColor="#9900fe"
+        app:rightIsShow="true"
+        app:rightText="→_→右边"
+        app:titleText="账号登陆" />
+
+    <LinearLayout
+        android:background="@drawable/shap_btn_ed"
+        android:layout_marginTop="150px"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="576px"
+        android:layout_height="87px">
+
+    <ImageView
+
+        android:layout_width="26px"
+        android:layout_height="28px"
+        android:layout_gravity="center"
+        android:layout_marginLeft="22px"
+        android:src="@mipmap/ic_launcher" />
+
+    <EditText
+        android:id="@+id/mETLoninPhone"
+        android:background="@drawable/shap_btn_ed"
+        style="@style/EditextViewStyle"
+        android:layout_marginLeft="22px"
+        android:hint="请输入账号"
+        android:inputType="phone"
+        android:maxLength="11" />
+
+    <ImageView
+        android:background="@drawable/shap_btn_ed"
+        android:id="@+id/mIVdeleteinput"
+        android:layout_width="29px"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginRight="34px"
+        android:src="@mipmap/icon_fork_b"
+        android:visibility="gone" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/shap_btn_ed"
+        android:layout_marginTop="69px"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="576px"
+        android:layout_height="87px">
+
+        <ImageView
+
+            android:layout_width="26px"
+            android:layout_height="28px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22px"
+            android:src="@mipmap/icon_key" />
+
+        <EditText
+
+            android:id="@+id/mETLoninPSW"
+            style="@style/EditextViewStyle"
+            android:layout_marginLeft="22px"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:maxLength="16" />
+        <TextView
+            android:id="@+id/mTextGetCode"
+            android:background="@drawable/shap_btn_ed"
+            android:text="忘记密码"
+            android:layout_marginRight="30px"
+            android:layout_width="96px"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="17px"
+            android:textColor="#4DD0C8"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mButtonRegis"
+        style="@style/StyleButtonCommon"
+        android:layout_marginTop="67px"
+        android:background="@drawable/shap_btn_bg"
+        android:text="@string/text_login" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152px"
+        android:orientation="horizontal">
+
+        <View
+            style="@style/LineStyle"
+            android:layout_width="120px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="123px"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="还没账号？"
+            android:textColor="#939393"
+            android:textSize="22px"
+            android:visibility="visible" />
+
+        <View
+            style="@style/LineStyle"
+            android:layout_width="120px"
+            android:layout_gravity="center"
+            android:layout_marginRight="122px"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="48px"
+        android:layout_width="match_parent"
+        android:layout_height="86px">
+        <Button
+            android:id="@+id/mButtonRegisPhone"
+            android:background="@mipmap/ic_launcher"
+            android:layout_toLeftOf="@+id/mButtonRegisQQ"
+            android:layout_marginRight="112px"
+            android:layout_width="86px"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/mButtonRegisQQ"
+            android:background="@mipmap/ic_launcher"
+            android:layout_width="86px"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:background="@mipmap/ic_launcher"
+            android:id="@+id/mButtonRegisWeChat"
+            android:src="@mipmap/ic_launcher"
+            android:layout_toRightOf="@+id/mButtonRegisQQ"
+            android:layout_marginLeft="112px"
+            android:layout_width="86px"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/mTextConsent"
+        android:textSize="27px"
+        android:gravity="center"
+        android:text="点击登陆，即表示您同意《屏频使用协议》"
+        android:layout_marginTop="257px"
+        android:layout_width="match_parent"
+        android:layout_height="27px" />
+</LinearLayout>
