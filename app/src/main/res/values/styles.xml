@@ -48,8 +48,8 @@
     </style>
 
     <style name="ImageViewStyleTab" parent="ImageViewStyle">
-        <item name="layout_height">50px</item>
-        <item name="layout_width">50px</item>
+        <item name="android:layout_height">50px</item>
+        <item name="android:layout_width">50px</item>
     </style>
 
 

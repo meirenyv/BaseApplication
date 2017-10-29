@@ -96,6 +96,8 @@ public class MenuActivity extends BaseActivity implements CompoundButton.OnCheck
         minefragment = MineFragment.newInstance();
     }
 
+
+
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
         if (b){
