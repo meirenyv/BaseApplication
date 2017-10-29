@@ -30,11 +30,11 @@ public class MenuActivity extends BaseActivity {
 
     @BindView(R.id.mVPFmain)
     ViewPagerFixed mVPFmain;
-    private Fragment homepagefragment;
-    private Fragment myadsfragment;
-    private Fragment myscreenfragment;
-    private Fragment reportformsfragment;
-    private Fragment minefragment;
+    private Fragment homepagefragment=HomePageFragment.newInstance();
+    private Fragment myadsfragment=MyAdsFragment.newInstance();
+    private Fragment myscreenfragment=MyScreenFragment.newInstance();
+    private Fragment reportformsfragment=ReportFormsFragment.newInstance();
+    private Fragment minefragment=MineFragment.newInstance();
 
 
     @Override
@@ -53,11 +53,11 @@ public class MenuActivity extends BaseActivity {
             ArrayList<Fragment> fragments = new ArrayList<>();
 
             {
-                fragments.add(HomePageFragment.newInstance());
-                fragments.add(MyAdsFragment.newInstance());
-                fragments.add(MyScreenFragment.newInstance());
-                fragments.add(ReportFormsFragment.newInstance());
-                fragments.add(MineFragment.newInstance());
+                fragments.add(homepagefragment);
+                fragments.add(myadsfragment);
+                fragments.add(myscreenfragment);
+                fragments.add(reportformsfragment);
+                fragments.add(minefragment);
             }
 
             @Override
@@ -87,7 +87,6 @@ public class MenuActivity extends BaseActivity {
                 mVPFmain.setCurrentItem(2);
                 break;
             case R.id.mTabReportForms:
-
                 mVPFmain.setCurrentItem(3);
                 break;
             case R.id.mTabMine:
