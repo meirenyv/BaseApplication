@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="lzhs.com.baseapplication.module.menu.MenuActivity">
+
     <lzhs.com.library.widget.views.TitleBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,16 +16,19 @@
         app:rightIsShow="true"
         app:rightText="→_→右边"
         app:titleText="账号登陆" />
+
     <lzhs.com.library.widget.views.viewpager.ViewPagerFixed
         android:id="@+id/mVPFmain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
-    </lzhs.com.library.widget.views.viewpager.ViewPagerFixed>
+        android:layout_weight="1"></lzhs.com.library.widget.views.viewpager.ViewPagerFixed>
+
     <View style="@style/LineStyle" />
+
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="99px"
+        android:visibility="gone"
         android:orientation="horizontal">
 
         <RadioButton
@@ -71,17 +75,17 @@
             android:textSize="18dp" />
 
         <RadioButton
-        android:id="@+id/mRBreportforms"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:button="@null"
-        android:drawableTop="@drawable/selector_reportforms_bottom4"
-        android:gravity="center"
-        android:paddingTop="14px"
-        android:text="@string/reportforms"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18dp" />
+            android:id="@+id/mRBreportforms"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_reportforms_bottom4"
+            android:gravity="center"
+            android:paddingTop="14px"
+            android:text="@string/reportforms"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/mRBmine"
@@ -97,4 +101,118 @@
             android:textColor="@color/colorPrimary"
             android:textSize="18sp" />
     </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="99px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/ImageViewStyleTab"
+                android:background="@drawable/selector_homepage_bottom1"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11px"
+                android:text="@string/homepage"
+                android:textSize="18px" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/ImageViewStyleTab"
+                android:background="@drawable/selector_homepage_bottom1"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11px"
+                android:text="@string/homepage"
+                android:textSize="18px" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/ImageViewStyleTab"
+                android:background="@drawable/selector_homepage_bottom1"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11px"
+                android:text="@string/homepage"
+                android:textSize="18px" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/ImageViewStyleTab"
+                android:background="@drawable/selector_homepage_bottom1"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11px"
+                android:text="@string/homepage"
+                android:textSize="18px" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/ImageViewStyleTab"
+                android:background="@drawable/selector_homepage_bottom1"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11px"
+                android:text="@string/homepage"
+                android:textSize="18px" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </com.zhy.autolayout.AutoLinearLayout>
