@@ -68,6 +68,8 @@ public abstract class IPresenter<V extends IView, M extends IModel> implements B
         if (isViewAttached()) {
             mViewRef.clear();
             mViewRef = null;
+        }
+        if(mModel.get()!=null){
             mModel.get().onDestroy();
             mModel.clear();
             mModel = null;

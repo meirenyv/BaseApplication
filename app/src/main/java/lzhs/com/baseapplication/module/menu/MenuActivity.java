@@ -23,6 +23,7 @@ import lzhs.com.baseapplication.module.menu.myscreen.MyScreenFragment;
 import lzhs.com.baseapplication.module.menu.reportforms.ReportFormsFragment;
 import lzhs.com.library.base.BaseActivity;
 import lzhs.com.library.utils.ActivityUtil;
+import lzhs.com.library.widget.views.viewpager.PageTransformer.DepthPageTransformer;
 import lzhs.com.library.widget.views.viewpager.ViewPagerFixed;
 
 
@@ -95,6 +96,8 @@ public class MenuActivity extends BaseActivity {
         };
         mVPFmain.setAdapter(adapter);
         mVPFmain.setOffscreenPageLimit(5);
+        mVPFmain.setPageTransformer(true, new DepthPageTransformer());
+        setStarts(0);
     }
 
     @OnClick({R.id.mTabHomePage, R.id.mTabMyAds, R.id.mTabMyScreen, R.id.mTabReportForms, R.id.mTabMine})
