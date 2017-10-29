@@ -108,6 +108,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:id="@+id/mTabHomePage"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -129,6 +130,7 @@
 
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/mTabMyAds"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -150,6 +152,7 @@
 
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/mTabMyScreen"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -171,6 +174,7 @@
 
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/mTabReportForms"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -192,6 +196,7 @@
 
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/mTabMine"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
