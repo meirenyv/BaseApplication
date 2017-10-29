@@ -15,12 +15,12 @@
         app:rightIsShow="true"
         app:rightText="→_→右边"
         app:titleText="账号登陆" />
-    <azcx9d.com.library.wedgit.view.viewpager.ViewPagerFixed
+    <lzhs.com.library.widget.views.viewpager.ViewPagerFixed
         android:id="@+id/mVPFmain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
-    </azcx9d.com.library.wedgit.view.viewpager.ViewPagerFixed>
+    </lzhs.com.library.widget.views.viewpager.ViewPagerFixed>
     <View style="@style/LineStyle" />
     <RadioGroup
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
             android:padding="14px"
             android:text="@string/homepage"
             android:textColor="@color/colorPrimary"
-            android:textSize="18px" />
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/mRBmyads"
@@ -54,7 +54,7 @@
             android:padding="14px"
             android:text="@string/myads"
             android:textColor="@color/colorPrimary"
-            android:textSize="18px" />
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/mRBmyscreen"
@@ -68,7 +68,7 @@
             android:padding="14px"
             android:text="@string/myscreen"
             android:textColor="@color/colorPrimary"
-            android:textSize="18px" />
+            android:textSize="18dp" />
 
         <RadioButton
         android:id="@+id/mRBreportforms"
@@ -81,7 +81,7 @@
         android:paddingTop="14px"
         android:text="@string/reportforms"
         android:textColor="@color/colorPrimary"
-        android:textSize="18px" />
+        android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/mRBmine"
@@ -92,9 +92,9 @@
             android:button="@null"
             android:drawableTop="@drawable/selector_mine_bottom5"
             android:gravity="center"
-            android:padding="14px"
+            android:padding="24dp"
             android:text="@string/mine"
             android:textColor="@color/colorPrimary"
-            android:textSize="18px" />
+            android:textSize="18sp" />
     </RadioGroup>
 </com.zhy.autolayout.AutoLinearLayout>

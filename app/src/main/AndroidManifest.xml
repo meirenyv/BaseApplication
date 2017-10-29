@@ -16,11 +16,7 @@
         <activity android:name=".module.StartActivity" />
         <!-- 账号登陆页面 -->
         <activity android:name=".module.login.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <!-- 手机注册页面 -->
         <activity android:name=".module.login.PhoneRegistActivity" />
@@ -34,7 +30,13 @@
             </intent-filter>
         </activity>
         <!-- 页面的主菜单页面 -->
-        <activity android:name=".module.menu.MenuActivity"></activity>
+        <activity android:name=".module.menu.MenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -70,14 +70,16 @@ public class MenuActivity extends BaseActivity implements CompoundButton.OnCheck
 
             @Override
             public Fragment getItem(int position) {
-                return null;
+                return fragments.get(position);
             }
 
             @Override
             public int getCount() {
-                return 0;
+                return  fragments != null ? fragments.size() : 0;
             }
         } ;
+        mVPFmain.setAdapter(adapter);
+        mVPFmain.setOffscreenPageLimit(5);
     }
 
     private void intiview() {
@@ -96,6 +98,27 @@ public class MenuActivity extends BaseActivity implements CompoundButton.OnCheck
 
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+        if (b){
+            switch (compoundButton.getId()){
+                case R.id.mRBhomepage:
+                    mVPFmain.setCurrentItem(0);
+                    break;
+                case R.id.mRBmyads:
+                    mVPFmain.setCurrentItem(1);
+                    break;
 
+                case R.id.mRBmyscreen:
+                    mVPFmain.setCurrentItem(2);
+                    break;
+                case R.id.mRBreportforms:
+                    mVPFmain.setCurrentItem(3);
+                    break;
+
+                case R.id.mRBmine:
+                    mVPFmain.setCurrentItem(4);
+                    break;
+
+            }
+        }
     }
 }
