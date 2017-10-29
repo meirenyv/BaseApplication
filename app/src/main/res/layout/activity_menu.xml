@@ -28,8 +28,8 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="99px"
-        android:visibility="gone"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
 
         <RadioButton
             android:id="@+id/mRBhomepage"
@@ -116,19 +116,24 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/mImageHomePage"
                 style="@style/ImageViewStyleTab"
-                android:background="@drawable/selector_homepage_bottom1"
-                android:clickable="true" />
+                :foucsable="true"
+                android:src="@mipmap/icon_home_unselected"
+                tools:clickable="true" />
 
             <TextView
+                android:id="@+id/mTextHomePage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="11px"
                 android:text="@string/homepage"
+                android:textColor="@drawable/draw_menu_tab_text"
                 android:textSize="18px" />
 
 
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/mTabMyAds"
             android:layout_width="0dp"
@@ -138,19 +143,22 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/mImageMyAds"
                 style="@style/ImageViewStyleTab"
-                android:background="@drawable/selector_homepage_bottom1"
-                android:clickable="true" />
+                android:clickable="true"
+                android:src="@mipmap/icon_myads_unselected" />
 
             <TextView
+                android:id="@+id/mTextMyAds"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="11px"
-                android:text="@string/homepage"
+                android:text="@string/myads"
                 android:textSize="18px" />
 
 
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/mTabMyScreen"
             android:layout_width="0dp"
@@ -160,19 +168,22 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/mImageMyScreen"
                 style="@style/ImageViewStyleTab"
-                android:background="@drawable/selector_homepage_bottom1"
-                android:clickable="true" />
+                android:clickable="true"
+                android:src="@mipmap/icon_myscreen_unselected" />
 
             <TextView
+                android:id="@+id/mTextMyScreen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="11px"
-                android:text="@string/homepage"
+                android:text="@string/myscreen"
                 android:textSize="18px" />
 
 
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/mTabReportForms"
             android:layout_width="0dp"
@@ -182,19 +193,22 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/mImageReportForms"
                 style="@style/ImageViewStyleTab"
-                android:background="@drawable/selector_homepage_bottom1"
-                android:clickable="true" />
+                android:clickable="true"
+                android:src="@mipmap/icon_reportforms_unselected" />
 
             <TextView
+                android:id="@+id/mTextReportForms"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="11px"
-                android:text="@string/homepage"
+                android:text="@string/reportforms"
                 android:textSize="18px" />
 
 
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/mTabMine"
             android:layout_width="0dp"
@@ -204,15 +218,16 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/mImageMine"
                 style="@style/ImageViewStyleTab"
-                android:background="@drawable/selector_homepage_bottom1"
-                android:clickable="true" />
+                android:background="@mipmap/icon_mine_unselected" />
 
             <TextView
+                android:id="@+id/mTextMine"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="11px"
-                android:text="@string/homepage"
+                android:text="@string/mine"
                 android:textSize="18px" />
 
 

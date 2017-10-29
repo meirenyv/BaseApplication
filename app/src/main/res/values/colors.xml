@@ -9,8 +9,8 @@
     <color name="colorText03">#333333</color>
     <!--细线颜色-->
     <color name="ColorLine">#DBDBDB</color>
-
-
+    <color name="colorMenuTextUnSelected">#97A9C6</color>
+    <color name="colorMenuTextSelected">#FF6C41</color>
 
 
 </resources>
