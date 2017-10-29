@@ -53,4 +53,7 @@ dependencies {
 
     compile 'com.github.bumptech.glide:glide:4.2.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.2.0'
+
+    //RefreshLayout that support for OverScroll and better than iOS. 支持下拉刷新和上拉加载的RefreshLayout,自带越界回弹效果，支持RecyclerView,AbsListView,ScrollView,WebView
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.6'
 }

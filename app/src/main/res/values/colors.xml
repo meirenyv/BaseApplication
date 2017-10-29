@@ -11,6 +11,9 @@
     <color name="ColorLine">#DBDBDB</color>
     <color name="colorMenuTextUnSelected">#97A9C6</color>
     <color name="colorMenuTextSelected">#FF6C41</color>
+    <color name="color_myads_title_text_select">#21B2E0</color>
+    <color name="color_myads_title_tab_select">#BDE6F3</color>
+    <color name="color_myads_title_text_unselect">#6A83A1</color>
 
 
 </resources>

@@ -3,6 +3,7 @@ package lzhs.com.baseapplication.module.login;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -12,6 +13,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import lzhs.com.baseapplication.R;
+import lzhs.com.baseapplication.module.menu.MenuActivity;
 import lzhs.com.baseapplication.mvp.login.LoginPresenter;
 import lzhs.com.baseapplication.mvp.login.LoginView;
 import lzhs.com.library.base.BaseActivity;
@@ -64,8 +66,20 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
     }
 
 
-    @OnClick(R.id.mButtonRegisPhone)
-    public void onViewClicked() {
-      startActivity(new Intent(this, PhoneRegistActivity.class));
+    @OnClick({R.id.mButtonRegis, R.id.mButtonRegisPhone, R.id.mButtonRegisQQ, R.id.mButtonRegisWeChat})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.mButtonRegis:
+                //登陆按钮
+                startActivity(new Intent(this, MenuActivity.class));
+                break;
+            case R.id.mButtonRegisPhone:
+                startActivity(new Intent(this, PhoneRegistActivity.class));
+                break;
+            case R.id.mButtonRegisQQ:
+                break;
+            case R.id.mButtonRegisWeChat:
+                break;
+        }
     }
 }

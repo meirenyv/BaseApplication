@@ -1,28 +1,94 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E9EEF5"
+    android:orientation="vertical"
     tools:context="lzhs.com.baseapplication.module.menu.myads.MyAdsFragment">
 
-
-    <android.support.design.widget.TabLayout
-        android:id="@+id/mTabLayout"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="58px"
         android:layout_marginTop="4px"
-        android:orientation="vertical"
-        app:tabGravity="fill"
-        app:tabIndicatorHeight="0dp"
-        app:tabMode="fixed"
-        app:tabSelectedTextColor="#21B2E0"
-        app:tabTextColor="#000" />
+        android:orientation="horizontal">
 
-    <lzhs.com.library.widget.views.viewpager.ViewPagerFixed
+        <android.support.v7.widget.CardView
+            android:id="@+id/mTabMake"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10px"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/color_myads_title_tab_select"
+            app:cardCornerRadius="5px"
+            app:cardElevation="5px">
+
+            <TextView
+                android:id="@+id/mTextMake"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="广告制作（0）"
+                android:textColor="@color/color_myads_title_text_select"
+                android:textSize="24px" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/mTabPutIn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="5px"
+            app:cardElevation="5px">
+
+            <TextView
+                android:id="@+id/mTextPutIn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="可投放（0）"
+                android:textColor="@color/color_myads_title_text_unselect"
+                android:textSize="24px" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/mTabPuting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10px"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="5px"
+            app:cardElevation="5px">
+
+            <TextView
+                android:id="@+id/mTextPuting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="投放中（0）"
+                android:textColor="@color/color_myads_title_text_unselect"
+                android:textSize="24px" />
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
         android:id="@+id/mViewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16px"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="14px" />
 
 
-</FrameLayout>
+</LinearLayout>

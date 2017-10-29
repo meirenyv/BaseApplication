@@ -12,8 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- 应用启动入口页面 -->
-        <activity android:name=".module.StartActivity" />
+        <!-- 应用启动入口页面   充当闪屏页面 -->
+        <activity android:name=".module.StartActivity">
+        </activity>
         <!-- 账号登陆页面 -->
         <activity android:name=".module.login.LoginActivity">
 
@@ -30,13 +31,7 @@
             </intent-filter>
         </activity>
         <!-- 页面的主菜单页面 -->
-        <activity android:name=".module.menu.MenuActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".module.menu.MenuActivity"></activity>
     </application>
 
 </manifest>
