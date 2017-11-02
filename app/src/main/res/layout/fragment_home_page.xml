@@ -1,14 +1,33 @@
-<com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:apps="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    apps:tr_pureScrollMode_on="true"
-    tools:context="lzhs.com.baseapplication.module.menu.homepage.HomePageFragment">
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/mRecyclerView"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <lzhs.com.library.widget.views.TitleBar
+        android:id="@+id/homeTitleBar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        app:leftColor="#ccc"
+        app:leftText="消息"
+        app:rightColor="#9900fe"
+        app:rightIsShow="true"
+        app:rightText="认证"
+        app:titleText="@string/screeninteraction" />
+<com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:apps="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+apps:tr_pureScrollMode_on="true"
+tools:context="lzhs.com.baseapplication.module.menu.homepage.HomePageFragment">
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/mRecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
 
 </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+
+    </LinearLayout>

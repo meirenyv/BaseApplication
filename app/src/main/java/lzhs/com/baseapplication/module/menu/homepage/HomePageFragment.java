@@ -1,6 +1,7 @@
 package lzhs.com.baseapplication.module.menu.homepage;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
@@ -20,8 +21,10 @@ import lzhs.com.baseapplication.module.menu.homepage.bean.HomePageItemBean;
 import lzhs.com.baseapplication.module.menu.homepage.delegate.HomePageItemType01;
 import lzhs.com.baseapplication.module.menu.homepage.delegate.HomePageItemType02;
 import lzhs.com.baseapplication.module.menu.homepage.delegate.HomePageItemType03;
+import lzhs.com.baseapplication.module.menu.homepage.delegate.authentication.AuthenticationActivity;
 import lzhs.com.library.base.BaseFragment_V4;
 import lzhs.com.library.widget.adapter.recycle.MultiItemTypeAdapter;
+import lzhs.com.library.widget.views.TitleBar;
 
 /**
  * 首页
@@ -31,6 +34,9 @@ public class HomePageFragment extends BaseFragment_V4 implements  HomePageOnItem
 
     @BindView(R.id.mRecyclerView)
     RecyclerView mRecyclerView;
+    @BindView(R.id.homeTitleBar)
+    TitleBar homeTitleBar;
+
     Unbinder unbinder;
 
 
@@ -66,6 +72,13 @@ public class HomePageFragment extends BaseFragment_V4 implements  HomePageOnItem
         adapter.addItemViewDelegate(0xa2,new HomePageItemType02(this,this));
         adapter.addItemViewDelegate(0xa3,new HomePageItemType03(this));
         mRecyclerView.setAdapter(adapter);
+        homeTitleBar.setOnClickToRight(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO: 2017/11/2
+                startActivity(new Intent(getContext(), AuthenticationActivity.class));
+            }
+        });
     }
 
     public static HomePageFragment newInstance() {

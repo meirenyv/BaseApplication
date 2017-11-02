@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <lzhs.com.library.widget.views.TitleBar
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/authentication" />
+
+     <RadioGroup
+         android:layout_width="match_parent"
+         android:layout_height="58px"
+         android:orientation="horizontal">
+         <RadioButton
+             android:id="@+id/mRBPerson"
+             android:checked="true"
+             android:text="@string/PersonalIdentification"
+             android:layout_weight="1"
+             style="@style/RadioButtonViewStyle"
+              />
+         <RadioButton
+             android:id="@+id/mRBEnterprise"
+             android:text="@string/EnterpriseUserAuthentication"
+             android:layout_weight="1"
+             style="@style/RadioButtonViewStyle"
+             />
+
+     </RadioGroup>
+    <lzhs.com.library.widget.views.viewpager.ViewPagerFixed
+        android:id="@+id/mVPFauthentication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </lzhs.com.library.widget.views.viewpager.ViewPagerFixed>
+</com.zhy.autolayout.AutoLinearLayout>

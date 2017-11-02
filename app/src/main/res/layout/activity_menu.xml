@@ -7,15 +7,7 @@
     android:orientation="vertical"
     tools:context="lzhs.com.baseapplication.module.menu.MenuActivity">
 
-    <lzhs.com.library.widget.views.TitleBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:leftColor="#ccc"
-        app:leftText="左边文字"
-        app:rightColor="#9900fe"
-        app:rightIsShow="true"
-        app:rightText="→_→右边"
-        app:titleText="账号登陆" />
+
 
     <lzhs.com.library.widget.views.viewpager.ViewPagerFixed
         android:id="@+id/mVPFmain"

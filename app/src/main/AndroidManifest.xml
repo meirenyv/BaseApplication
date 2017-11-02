@@ -33,8 +33,10 @@
         <activity android:name=".module.menu.myads.make.delegate.formework.SomehowScreenActivity" />
         <!-- 选择模板查看 -->
         <activity android:name=".module.menu.myads.make.delegate.formework.SeeTheTemplateActivity" />
-        <!-- 模板使用-->
-        <activity android:name=".module.menu.myads.make.delegate.formework.UseActivity"></activity>
+        <!-- 模板使用 -->
+        <activity android:name=".module.menu.myads.make.delegate.formework.UseActivity" />
+        <!-- 身份认证 -->
+        <activity android:name=".module.menu.homepage.delegate.authentication.AuthenticationActivity"></activity>
     </application>
 
 </manifest>

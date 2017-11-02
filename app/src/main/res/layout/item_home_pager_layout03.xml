@@ -4,12 +4,83 @@
     android:layout_height="match_parent"
     >
     <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="117px"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="121px"
+            android:layout_height="117px"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_height="86px"
+                android:layout_width="86px"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_identity"
+                style="@style/ImageViewStyle"
+                />
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="个人用户"
+                android:background="@drawable/shap_text_identity"
+                android:textSize="17px"
+                android:layout_width="match_parent"
+                android:layout_height="17px" />
+        </LinearLayout>
+
+
+            <TextView
+                android:layout_marginLeft="32px"
+                android:layout_weight="1"
+                android:gravity="left"
+                style="@style/TextViewStytle"
+                android:textColor="@color/mygray"
+                android:text="@string/myads"
+                android:layout_width="wrap_content"
+                android:layout_height="29px" />
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="150px"
+            android:layout_height="181px"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:src="@mipmap/icon_certification"
+                style="@style/ImageViewStyle"
+                android:layout_gravity="center"
+                android:layout_width="34px"
+                android:layout_height="44px" />
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="已认证"
+                android:textSize="17px"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="17px" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="21px"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="181px"
         android:orientation="horizontal">
         <ImageView
             android:layout_gravity="center"
-            android:src="@color/Blue"
+            android:src="@mipmap/myads"
             style="@style/ImageViewStyleLeft"/>
         <LinearLayout
             android:layout_marginLeft="32px"
@@ -26,7 +97,7 @@
                 android:layout_height="29px" />
             <TextView
                 android:layout_marginTop="10px"
-                android:gravity="left"
+                android:gravity="left|center"
                 android:text="当前0个可投放广告，0个可投放广告"
                 style="@style/TextViewStytle"
                 android:textSize="18px"
@@ -42,12 +113,13 @@
     </LinearLayout>
     <View style="@style/LineStyle" />
     <LinearLayout
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="181px"
         android:orientation="horizontal">
         <ImageView
             android:layout_gravity="center"
-            android:src="@color/Blue"
+            android:src="@mipmap/icon_myscreen"
             style="@style/ImageViewStyleLeft"/>
         <LinearLayout
             android:layout_marginLeft="32px"
@@ -80,12 +152,13 @@
     </LinearLayout>
     <View style="@style/LineStyle" />
     <LinearLayout
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="181px"
         android:orientation="horizontal">
         <ImageView
             android:layout_gravity="center"
-            android:src="@color/Blue"
+            android:src="@mipmap/icon_mywallet"
             style="@style/ImageViewStyleLeft"/>
         <LinearLayout
             android:layout_marginLeft="32px"
