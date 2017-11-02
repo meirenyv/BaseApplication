@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">BaseApplication</string>
     <string name="text_login">登 陆</string>
@@ -7,7 +8,27 @@
     <string name="myscreen">我的屏幕</string>
     <string name="mine">我</string>
     <string name="reportforms">报表</string>
-
-
-
+    <string name="text_landscape">横屏模板</string>
+    <string name="text_vertical">竖屏模板</string>
+    <string name="templateselection">模板选择</string>
+    <string name="ADtemplates">广告模板</string>
+    <string name="browsingEffect">模板浏览效果</string>
+    <string name="bt_goshoping">购买</string>
+    <string name="bt_use">使用</string>
+    <string name="TextADname">广告名称</string>
+    <string name="TextADIndustrry">广告行业</string>
+    <string name="TextADUrgentAudit">加急审核</string>
+    <string name="TextScreenDirection">屏幕方向</string>
+    <string name="TextAdStyle">广告类型</string>
+    <string name="next">下一步</string>
+    <string name="picture">图片</string>
+    <string name="video">视频</string>
+    <string name="landscape">横屏</string>
+    <string name="verticalscreen">竖屏</string>
+    <string name="hit1">★温馨提示：选择后不可修改</string>
+    <string name="hit2">★温馨提示：建议上传分辨率为1920×1080的图片</string>
+    <string name="makeAD">制作广告</string>
+    <string name="addscreen">添加屏幕</string>
+    <string name="mywallet">我的钱包</string>
+    <string name="recharge">立即充值</string>
 </resources>

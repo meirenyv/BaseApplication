@@ -1,5 +1,6 @@
 package lzhs.com.baseapplication.module.menu.myads.make;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
@@ -19,6 +20,7 @@ import lzhs.com.baseapplication.R;
 import lzhs.com.baseapplication.module.menu.myads.make.bean.MakeItemTypeBean;
 import lzhs.com.baseapplication.module.menu.myads.make.delegate.MakeItemType01;
 import lzhs.com.baseapplication.module.menu.myads.make.delegate.MakeItemType02;
+import lzhs.com.baseapplication.module.menu.myads.make.delegate.formework.SomehowScreenActivity;
 import lzhs.com.library.base.BaseFragment_V4;
 import lzhs.com.library.widget.adapter.recycle.MultiItemTypeAdapter;
 
@@ -96,8 +98,8 @@ public class MakeFragment extends BaseFragment_V4 implements OnItemSubViewClick{
 
     @Override
     public void addNewADS() {
-
-        Toast.makeText(getContext(),"你点击了添加按钮",Toast.LENGTH_LONG).show();
+        startActivity(new Intent(getActivity(),SomehowScreenActivity.class));
+        // Toast.makeText(getContext(),"你点击了添加按钮",Toast.LENGTH_LONG).show();
     }
 
 

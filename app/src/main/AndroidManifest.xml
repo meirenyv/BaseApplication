@@ -13,12 +13,9 @@
         android:theme="@style/AppTheme">
 
         <!-- 应用启动入口页面   充当闪屏页面 -->
-        <activity android:name=".module.StartActivity">
-        </activity>
+        <activity android:name=".module.StartActivity" />
         <!-- 账号登陆页面 -->
-        <activity android:name=".module.login.LoginActivity">
-
-        </activity>
+        <activity android:name=".module.login.LoginActivity" />
         <!-- 手机注册页面 -->
         <activity android:name=".module.login.PhoneRegistActivity" />
 
@@ -31,7 +28,13 @@
             </intent-filter>
         </activity>
         <!-- 页面的主菜单页面 -->
-        <activity android:name=".module.menu.MenuActivity"></activity>
+        <activity android:name=".module.menu.MenuActivity" />
+        <!-- 模板选择：选择横屏竖屏 -->
+        <activity android:name=".module.menu.myads.make.delegate.formework.SomehowScreenActivity" />
+        <!-- 选择模板查看 -->
+        <activity android:name=".module.menu.myads.make.delegate.formework.SeeTheTemplateActivity" />
+        <!-- 模板使用-->
+        <activity android:name=".module.menu.myads.make.delegate.formework.UseActivity"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="lzhs.com.baseapplication.module.menu.myads.make.delegate.formework.SeeTheTemplateActivity">
+    <lzhs.com.library.widget.views.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftColor="@color/white"
+        app:rightIsShow="true"
+        app:rightText="分享"
+        app:titleText="@string/ADtemplates" />
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/browsingEffect"
+        android:layout_marginTop="136px"
+        android:background="@color/Screenblue"
+        android:layout_width="match_parent"
+        android:layout_height="415px"
+        android:layout_marginLeft="7px"
+        android:layout_marginRight="7px"/>
+    <LinearLayout
+        android:layout_marginTop="149px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="86px">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/BTgoshoping"
+                android:text="@string/bt_goshoping"
+                android:background="@drawable/shap_btn_goshoping"
+                android:layout_width="176px"
+                android:layout_height="match_parent"
+                style="@style/StyleButtonCommon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/BTuse"
+                android:text="@string/bt_use"
+                android:background="@drawable/shap_btn_use"
+                android:layout_width="176px"
+                android:layout_height="match_parent"
+                style="@style/StyleButtonCommon"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

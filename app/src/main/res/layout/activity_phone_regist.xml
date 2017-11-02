@@ -92,8 +92,6 @@
             android:layout_height="match_parent" />
 
     </LinearLayout>
-
-
     <TextView
         android:id="@+id/text"
         android:layout_marginTop="23px"
@@ -105,13 +103,91 @@
         android:text="未注册过的手机将自动创建屏频账户"
         android:layout_width="wrap_content"
         android:layout_height="24px" />
+    <LinearLayout
+        android:layout_below="@id/text"
+        android:id="@+id/mLinPutPsd"
+        android:background="@drawable/shap_btn_ed"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="576px"
+        android:layout_height="87px"
+        android:layout_marginTop="37px"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+
+            android:layout_width="26px"
+            android:layout_height="28px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22px"
+            android:src="@mipmap/ic_launcher" />
+
+        <EditText
+            android:id="@+id/mETPutPsd"
+            android:background="@drawable/shap_btn_ed"
+            style="@style/EditextViewStyle"
+            android:layout_marginLeft="22px"
+            android:hint="请输入密码"
+            android:inputType="phone"
+            android:maxLength="11" />
+
+        <ImageView
+            android:background="@drawable/shap_btn_ed"
+            android:id="@+id/mIVdeletePutPsd"
+            android:layout_width="29px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="34px"
+            android:src="@mipmap/icon_fork_b"
+            android:visibility="gone" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/mLinPutPsd"
+        android:id="@+id/mLinPutPsd2"
+        android:background="@drawable/shap_btn_ed"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="576px"
+        android:layout_height="87px"
+        android:layout_marginTop="69px"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+
+            android:layout_width="26px"
+            android:layout_height="28px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22px"
+            android:src="@mipmap/ic_launcher" />
+
+        <EditText
+            android:id="@+id/mETPutPsd2"
+            android:background="@drawable/shap_btn_ed"
+            style="@style/EditextViewStyle"
+            android:layout_marginLeft="22px"
+            android:hint="重复输入密码"
+            android:inputType="phone"
+            android:maxLength="11" />
+
+        <ImageView
+            android:background="@drawable/shap_btn_ed"
+            android:id="@+id/mIVdeletePutPsd2"
+            android:layout_width="29px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="34px"
+            android:src="@mipmap/icon_fork_b"
+            android:visibility="gone" />
+
+    </LinearLayout>
     <Button
         android:id="@+id/mButtonRegis"
-        android:layout_below="@id/text"
+        android:layout_below="@id/mLinPutPsd2"
         android:layout_centerHorizontal="true"
         style="@style/StyleButtonCommon"
         android:layout_marginTop="110px"
-        android:background="@drawable/shap_btn_bg"
+        android:background="@drawable/selector_btn"
         android:text="@string/text_regist" />
     <TextView
         android:id="@+id/mTextConsent"

@@ -1,6 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="181px"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@color/Blue"
+            style="@style/ImageViewStyleLeft"/>
+        <LinearLayout
+            android:layout_marginLeft="32px"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="left"
+                style="@style/TextViewStytle"
+                android:textColor="@color/black"
+                android:text="@string/myads"
+                android:layout_height="29px" />
+            <TextView
+                android:layout_marginTop="10px"
+                android:gravity="left"
+                android:text="当前0个可投放广告，0个可投放广告"
+                style="@style/TextViewStytle"
+                android:textSize="18px"
+                android:layout_height="18px" />
+        </LinearLayout>
+        <TextView
+            android:textColor="@color/white"
+            style="@style/TextViewStytle"
+            android:background="@drawable/selector_makeads"
+            android:text="@string/makeAD"
+            android:layout_width="150px"
+            android:layout_height="61px" />
+    </LinearLayout>
+    <View style="@style/LineStyle" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="181px"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@color/Blue"
+            style="@style/ImageViewStyleLeft"/>
+        <LinearLayout
+            android:layout_marginLeft="32px"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="left"
+                style="@style/TextViewStytle"
+                android:textColor="@color/black"
+                android:text="@string/myscreen"
+                android:layout_height="29px" />
+            <TextView
+                android:layout_marginTop="10px"
+                android:gravity="left"
+                android:text="用有0个屏幕，0个屏幕组"
+                style="@style/TextViewStytle"
+                android:textSize="18px"
+                android:layout_height="18px" />
+        </LinearLayout>
+        <TextView
+            android:textColor="@color/white"
+            style="@style/TextViewStytle"
+            android:background="@drawable/selector_addscreen"
+            android:text="@string/addscreen"
+            android:layout_width="150px"
+            android:layout_height="61px" />
+    </LinearLayout>
+    <View style="@style/LineStyle" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="181px"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@color/Blue"
+            style="@style/ImageViewStyleLeft"/>
+        <LinearLayout
+            android:layout_marginLeft="32px"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="left"
+                style="@style/TextViewStytle"
+                android:textColor="@color/black"
+                android:text="@string/mywallet"
+                android:layout_height="29px" />
+            <TextView
+                android:layout_marginTop="10px"
+                android:gravity="left"
+                android:text="当前余额0.00"
+                style="@style/TextViewStytle"
+                android:textSize="18px"
+                android:layout_height="18px" />
+        </LinearLayout>
+        <TextView
+            android:textColor="@color/white"
+            style="@style/TextViewStytle"
+            android:background="@drawable/recharge"
+            android:text="@string/recharge"
+            android:layout_width="150px"
+            android:layout_height="61px" />
+    </LinearLayout>
+    <View style="@style/LineStyle" />
+
+
 
 </LinearLayout>

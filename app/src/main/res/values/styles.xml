@@ -38,18 +38,43 @@
         <item name="android:background">#FFFFFF</item>
         <item name="android:textColor">@color/colorText03</item>
     </style>
-    
-    
-    
+    <style name="RadioButtonStyle">
+        <item name="android:background">@drawable/selector_rb</item>
+    </style>
+
+
+    <!-- TextView的通用属性-->
+    <style name="TextViewStytle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorText01</item>
+        <item name="android:textSize">29px</item>
+    </style>
+
+    <!--ImageView的通用属性-->
     <style name="ImageViewStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:scaleType">fitXY</item>
     </style>
-
+    <!--Image的Tab属性-->
     <style name="ImageViewStyleTab" parent="ImageViewStyle">
         <item name="android:layout_height">50px</item>
         <item name="android:layout_width">50px</item>
+    </style>
+    <!--Image的首页左侧属性-->
+    <style name="ImageViewStyleLeft" parent="ImageViewStyle">
+        <item name="android:layout_height">121px</item>
+        <item name="android:layout_width">121px</item>
+    </style>
+    <style name="ImageViewLinearlayout" parent="ImageViewStyle">
+        <item name="android:layout_height">25px</item>
+        <item name="android:layout_width">17px</item>
+        <item name="android:layout_gravity" >center</item>
+        <item name="android:gravity">center</item>
+
     </style>
 
 

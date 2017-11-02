@@ -50,10 +50,9 @@ dependencies {
     compile 'com.squareup.okhttp3:logging-interceptor:3.9.0'
     //自动换页banner
     compile 'cn.bingoogolapple:bga-banner:2.1.7'
-
     compile 'com.github.bumptech.glide:glide:4.2.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.2.0'
-
+    //下拉框
     //RefreshLayout that support for OverScroll and better than iOS. 支持下拉刷新和上拉加载的RefreshLayout,自带越界回弹效果，支持RecyclerView,AbsListView,ScrollView,WebView
     compile 'com.lcodecorex:tkrefreshlayout:1.0.6'
 }

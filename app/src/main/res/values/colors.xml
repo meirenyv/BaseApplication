@@ -7,6 +7,10 @@
     <color name="colorTextHint01">#CBD1D1</color>
     <!--字体颜色-->
     <color name="colorText03">#333333</color>
+    <color name="colorText01">#B2B2B2</color>
+    <color name="greennext">#90CD33</color>
+    <color name="mygray">#CFD7E4</color>
+    <color name="mypurple">#7146FB</color>
     <!--细线颜色-->
     <color name="ColorLine">#DBDBDB</color>
     <color name="colorMenuTextUnSelected">#97A9C6</color>
@@ -14,6 +18,11 @@
     <color name="color_myads_title_text_select">#21B2E0</color>
     <color name="color_myads_title_tab_select">#BDE6F3</color>
     <color name="color_myads_title_text_unselect">#6A83A1</color>
+    <!--背景色-->
+    <color name="Screenblue">#44c6D6</color>
+    <color name="colorYellow">#F2BA03</color>
+    <color name="colorGreeen">#8EC63F</color>
+    <color name="myred">#FF7385</color>
 
 
 </resources>
