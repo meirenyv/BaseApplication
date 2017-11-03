@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="lzhs.com.baseapplication.module.menu.homepage.delegate.type.cleaning.CleaningActivity">
+    <lzhs.com.library.widget.views.TitleBar
+        android:id="@+id/homeTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftColor="#ccc"
+        app:titleText="@string/ShoppingCart" />
+
+    <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+      <LinearLayout
+          android:layout_margin="8px"
+          android:layout_width="match_parent"
+          android:layout_height="122px"
+          android:orientation="horizontal">
+          <ImageView
+              android:layout_gravity="center"
+              android:src="@color/colorAccent"
+              android:layout_width="178px"
+              android:layout_height="101px"
+              style="@style/ImageViewStyle" />
+          <LinearLayout
+              android:layout_weight="1"
+              android:gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+              <TextView
+                android:maxLines="1"
+                  android:ellipsize="end"
+                  android:gravity="center_vertical"
+                  android:text="深夜食堂/餐厅推广"
+              android:layout_width="match_parent"
+              android:textSize="35px"
+              android:layout_height="35px" />
+              <TextView
+
+                  android:text="总价：0.00"
+                  android:textColor="@color/red"
+                  android:gravity="right|center_vertical"
+                  android:layout_width="match_parent"
+                  android:textSize="24px"
+                  android:layout_height="24px" />
+          </LinearLayout>
+
+      </LinearLayout>
+      <LinearLayout
+          android:gravity="center"
+          android:layout_margin="8px"
+          android:background="@color/white"
+          android:layout_width="match_parent"
+          android:layout_height="121px"
+          android:orientation="vertical">
+          <TextView
+              android:gravity="center_vertical"
+              android:layout_height="wrap_content"
+              android:textSize="18px"
+              android:text="广告类型：普通"
+              style="@style/TextViewStytle"/>
+          <TextView
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:textSize="18px"
+              android:text="投放天数7天（2017年7月14日至2017年18日）"
+              style="@style/TextViewStytle"/>
+          <TextView
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:textSize="18px"
+              android:text="投放屏幕：0个  屏幕组0 个"
+              style="@style/TextViewStytle"/>
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/mLinMywallet"
+          android:background="@color/white"
+          android:layout_width="match_parent"
+          android:layout_height="181px"
+          android:orientation="horizontal">
+          <ImageView
+              android:layout_gravity="center"
+              android:src="@mipmap/icon_mywallet"
+              style="@style/ImageViewStyleLeft"/>
+          <LinearLayout
+              android:layout_marginLeft="32px"
+              android:layout_weight="1"
+              android:layout_width="wrap_content"
+              android:gravity="center"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+              <TextView
+                  android:gravity="left"
+                  style="@style/TextViewStytle"
+                  android:textColor="@color/black"
+                  android:text="@string/mywallet"
+                  android:layout_height="29px" />
+              <TextView
+                  android:layout_marginTop="10px"
+                  android:gravity="left"
+                  android:text="当前余额0.00"
+                  style="@style/TextViewStytle"
+                  android:textSize="18px"
+                  android:layout_height="18px" />
+          </LinearLayout>
+          <TextView
+              android:textColor="@color/white"
+              style="@style/TextViewStytle"
+              android:background="@drawable/recharge"
+              android:text="@string/recharge"
+              android:layout_width="150px"
+              android:layout_height="61px" />
+      </LinearLayout>
+      <View
+          style="@style/LineStyle"
+          />
+      <LinearLayout
+          android:id="@+id/mLinMyCoupon"
+          android:background="@color/white"
+          android:layout_width="match_parent"
+          android:layout_height="181px"
+          android:orientation="horizontal">
+          <ImageView
+              android:layout_gravity="center"
+              android:src="@mipmap/icon_mywallet"
+              style="@style/ImageViewStyleLeft"/>
+          <LinearLayout
+              android:layout_marginLeft="32px"
+              android:layout_weight="1"
+              android:layout_width="wrap_content"
+              android:gravity="center"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+              <TextView
+                  android:gravity="left"
+                  style="@style/TextViewStytle"
+                  android:textColor="@color/black"
+                  android:text="@string/MyCoupon"
+                  android:layout_height="29px" />
+              <TextView
+                  android:layout_marginTop="10px"
+                  android:gravity="left"
+                  android:text="当前0个优惠券"
+                  style="@style/TextViewStytle"
+                  android:textSize="18px"
+                  android:layout_height="18px" />
+          </LinearLayout>
+          <TextView
+              android:textColor="@color/white"
+              style="@style/TextViewStytle"
+              android:background="@drawable/mycoupon"
+              android:text="@string/NoUse"
+              android:layout_width="150px"
+              android:layout_height="61px" />
+      </LinearLayout>
+  </LinearLayout>
+
+    <LinearLayout
+        android:gravity="bottom|center"
+        android:layout_width="match_parent"
+        android:layout_height="86px"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/red"
+            android:text="实际支付0.00"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical" />
+        <TextView
+            android:textColor="@color/white"
+            style="@style/TextViewStytle"
+            android:background="@drawable/selector_addscreen"
+            android:text="@string/addmoney"
+            android:layout_width="225px"
+            android:layout_height="86px" />
+    </LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="lzhs.com.baseapplication.module.menu.homepage.delegate.type.recharge.RecargeActivity">
+    <lzhs.com.library.widget.views.TitleBar
+        android:id="@+id/UseTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftColor="@color/white"
+        app:titleText="@string/mTitleBarRecarge" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="117px">
+
+        <TextView
+            style="@style/TextViewStytle"
+            android:layout_width="157px"
+            android:text="@string/TextADname" />
+
+        <TextView
+            android:textColor="@color/red"
+            tools:text="0"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="117px">
+
+        <TextView
+            style="@style/TextViewStytle"
+            android:layout_width="157px"
+            android:text="@string/TextADname" />
+
+        <EditText
+            tools:text="500"
+            android:textColor="@color/red"
+            android:id="@+id/mETPutAdName"
+            style="@style/EditextViewStyle"
+            android:layout_height="61px"
+            android:layout_gravity="center"
+            android:layout_marginRight="61px"
+            android:background="@drawable/admoudle"
+            android:gravity="center_vertical"
+            android:textColorHint="@color/white" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="60px"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:text="@string/Modeofpayment"
+        android:layout_width="157px"
+        android:layout_height="wrap_content"
+        style="@style/TextViewStytle"
+        />
+    <RadioGroup
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="256px">
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="128px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="12px"
+              android:src="@color/yellow"
+                android:layout_width="85px"
+                android:layout_height="85px"
+                style="@style/ImageViewStyle" />
+            <RadioButton
+                android:id="@+id/RBalipay"
+                android:textSize="22px"
+                android:textColor="@color/mygray"
+                android:layout_marginLeft="43px"
+                android:checked="true"
+                android:layout_marginRight="142px"
+                android:text="@string/alipay"
+                android:button="@null"
+                android:drawableRight="@drawable/selector_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="128px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="12px"
+                android:src="@color/yellow"
+                android:layout_width="85px"
+                android:layout_height="85px"
+                style="@style/ImageViewStyle" />
+            <RadioButton
+                android:id="@+id/RBWeChat"
+                android:textSize="22px"
+                android:textColor="@color/mygray"
+                android:layout_marginLeft="43px"
+                android:layout_marginRight="142px"
+                android:text="@string/WeChat"
+                android:button="@null"
+                android:drawableRight="@drawable/selector_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </RadioGroup>
+    <Button
+        android:layout_marginTop="80px"
+        android:text="@string/mTitleBarRecarge"
+        android:background="@drawable/shap_btn_goshoping"
+        style="@style/StyleButtonCommon"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

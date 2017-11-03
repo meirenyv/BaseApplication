@@ -11,6 +11,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import lzhs.com.baseapplication.R;
 import lzhs.com.library.base.BaseActivity;
+import lzhs.com.library.utils.ActivityUtil;
 
 /**
  * 模板选择：横屏还是竖屏
@@ -30,6 +31,7 @@ public class SomehowScreenActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_somehow_screen);
         ButterKnife.bind(this);
+        ActivityUtil.setStatusBarBackground(this);
 
     }
 

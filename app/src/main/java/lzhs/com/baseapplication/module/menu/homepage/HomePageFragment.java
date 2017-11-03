@@ -22,6 +22,9 @@ import lzhs.com.baseapplication.module.menu.homepage.delegate.HomePageItemType01
 import lzhs.com.baseapplication.module.menu.homepage.delegate.HomePageItemType02;
 import lzhs.com.baseapplication.module.menu.homepage.delegate.HomePageItemType03;
 import lzhs.com.baseapplication.module.menu.homepage.delegate.authentication.AuthenticationActivity;
+import lzhs.com.baseapplication.module.menu.homepage.delegate.type.cleaning.CleaningActivity;
+import lzhs.com.baseapplication.module.menu.homepage.delegate.type.recharge.RecargeActivity;
+import lzhs.com.baseapplication.module.menu.myads.make.delegate.formework.SomehowScreenActivity;
 import lzhs.com.library.base.BaseFragment_V4;
 import lzhs.com.library.widget.adapter.recycle.MultiItemTypeAdapter;
 import lzhs.com.library.widget.views.TitleBar;
@@ -89,5 +92,26 @@ public class HomePageFragment extends BaseFragment_V4 implements  HomePageOnItem
     public void onDestroyView() {
         super.onDestroyView();
         unbinder.unbind();
+    }
+    //制作广告
+    @Override
+    public void makeADS() {
+        startActivity(new Intent(getActivity(),SomehowScreenActivity.class));
+
+    }
+    //添加屏幕
+    @Override
+    public void addScreen() {
+        // TODO: 2017/11/3 添加屏幕页面 
+    }
+    //立即结算
+    @Override
+    public void cleaning() {
+        startActivity(new Intent(getContext(), CleaningActivity.class));
+    }
+    //充值
+    @Override
+    public void recharge() {
+        startActivity(new Intent(getContext(), RecargeActivity.class));
     }
 }

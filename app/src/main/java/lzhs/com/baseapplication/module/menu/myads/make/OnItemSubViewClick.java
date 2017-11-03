@@ -2,9 +2,10 @@ package lzhs.com.baseapplication.module.menu.myads.make;
 
 public interface OnItemSubViewClick {
 
-    void submit();
+    void submit();//提交
 
-    void setting();
+    void setting();//设置
 
-    void addNewADS();
+    void addNewADS();//添加/制作广告
+
 }

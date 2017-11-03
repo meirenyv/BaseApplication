@@ -24,6 +24,7 @@ import lzhs.com.baseapplication.module.menu.myads.make.MakeFragment;
 import lzhs.com.baseapplication.module.menu.myads.putin.PutInFragment;
 import lzhs.com.baseapplication.module.menu.myads.puting.PutingFragment;
 import lzhs.com.library.base.BaseFragment_V4;
+import lzhs.com.library.utils.ActivityUtil;
 import lzhs.com.library.widget.views.viewpager.PageTransformer.DepthPageTransformer;
 
 import static android.graphics.Color.WHITE;
@@ -60,8 +61,9 @@ public class MyAdsFragment extends BaseFragment_V4 {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_my_ads, container, false);
         unbinder = ButterKnife.bind(this, view);
+        //设置沉浸式转台栏
+        ActivityUtil.setStatusBarBackground(getActivity());
         initViews();
-
         return view;
     }
 

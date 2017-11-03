@@ -33,14 +33,23 @@
     <string name="recharge">立即充值</string>
     <string name="screeninteraction">屏频互动</string>
     <string name="authentication">身份认证</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="PersonalIdentification">个人身份认证</string>
     <string name="EnterpriseUserAuthentication">企业用户认证</string>
     <string name="truename">请输入真实姓名</string>
     <string name="truephonenumber">请输入手机号码</string>
-    <string name="identitytext01">请排石并上传身份证正反面及手持身份证照片</string>
+    <string name="identitytext01">请拍照并上传身份证正反面及手持身份证照片</string>
     <string name="identitytext02">拍照时确保身份证边框完整.字体清晰.亮度均匀</string>
     <string name="Applicationforcertification">申请认证</string>
+    <string name="mTitleBarRecarge">充值</string>
+    <string name="Modeofpayment">支付方式</string>
+    <string name="alipay">支付宝</string>
+    <string name="WeChat">微信</string>
+    <string name="myShoppingCart">我的购物车</string>
+    <string name="cleaning">立即结算</string>
+    <string name="find">查找</string>
+    <string name="MyCoupon">我的优惠券</string>
+    <string name="NoUse">无可用</string>
+    <string name="addmoney">立即支付</string>
+    <string name="ShoppingCart">购物车</string>
 </resources>
