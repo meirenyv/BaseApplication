@@ -42,7 +42,8 @@
         <!-- 投放广告类型选择：普通，自投，插播 -->
         <activity android:name=".module.menu.myads.putin.PutInStyleActivity" />
         <!-- 购物车之立即结算 -->
-        <activity android:name=".module.menu.homepage.delegate.type.cleaning.CleaningActivity"></activity>
+        <activity android:name=".module.menu.homepage.delegate.type.cleaning.CleaningActivity" />
+        <activity android:name=".module.menu.myads.putin.ContinueAddActivity"></activity>
     </application>
 
 </manifest>

@@ -32,10 +32,16 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:button">@null</item>
         <item name="android:gravity">center</item>
-        <item name="android:textColor">@color/selectorrbtextcolor</item>
+        <item name="android:textColor">@color/putinrbtextcolor</item>
         <item name="android:background">@drawable/selector_rb_nopoint</item>
 
     </style>
+    <!--投放广告页面RadioButton通用属性-->
+    <style name="RadioButtonViewPStyle" parent="RadioButtonViewStyle">
+        <item name="android:textColor">@color/selectorrbtextcolor</item>
+        <item name="android:background">@drawable/selector_rb_putin</item>
+
+        </style>
     <!--EditText通用属性-->
     <style name="EditextViewStyle">
         <item name="android:layout_width">match_parent</item>

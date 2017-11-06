@@ -34,7 +34,7 @@ import lzhs.com.library.widget.adapter.recycle.MultiItemTypeAdapter;
 public class MakeFragment extends BaseFragment_V4 implements OnItemSubViewClick{
 
 
-    @BindView(R.id.mRecyclerView)
+  @BindView(R.id.mRecyclerView)
     RecyclerView mRecyclerView;
     Unbinder unbinder;
 

@@ -1,15 +1,16 @@
 package lzhs.com.baseapplication.module.menu.myads.putin;
 
-import android.graphics.Color;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.RelativeLayout;
 
-import java.util.Random;
-
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
+import lzhs.com.baseapplication.R;
 import lzhs.com.library.base.BaseFragment_V4;
 
 /**
@@ -20,6 +21,13 @@ import lzhs.com.library.base.BaseFragment_V4;
  */
 public class PutInFragment extends BaseFragment_V4 {
     static final String TAG = "TAG";
+
+    @BindView(R.id.mViewSubmit)
+    RelativeLayout mViewSubmit;
+    @BindView(R.id.mViewSetting)
+    RelativeLayout mViewSetting;
+
+    Unbinder unbinder;
 
 
     public static PutInFragment newInstance(String argument) {
@@ -33,13 +41,33 @@ public class PutInFragment extends BaseFragment_V4 {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Random random = new Random();
+        View view = inflater.inflate(R.layout.item_ads_make_layout, container, false);
+        unbinder = ButterKnife.bind(this, view);
+
+       /* Random random = new Random();
         TextView tv = new TextView(getActivity());
         tv.setText(getArguments().getString(TAG));
         tv.setGravity(Gravity.CENTER);
         tv.setBackgroundColor(Color.argb(random.nextInt(100),
                 random.nextInt(255), random.nextInt(255), random.nextInt(255)));
-        return tv;
+        return tv;*/
+        init();
+        return view;
+    }
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        unbinder.unbind();
+    }
+    private void init() {
+  mViewSubmit.setVisibility(View.GONE);
+        mViewSetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(),PutInStyleActivity.class));
+            }
+        });
+
     }
 
 }

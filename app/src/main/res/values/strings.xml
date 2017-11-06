@@ -55,4 +55,16 @@
     <string name="advertising">投放广告</string>
     <string name="beginTime">开始时间</string>
     <string name="closeTime">结束时间</string>
+    <string name="CallWaiting">插播</string>
+    <string name="select">选择</string>
+    <string name="fifteenminute">15分钟</string>
+    <string name="thirtyminute">30分钟</string>
+    <string name="fortyfiveminute">45分钟</string>
+    <string name="sixtyminute">60分钟</string>
+    <string name="putindate">投放天数：0天</string>
+    <string name="common">普通</string>
+    <string name="putinByMyself">自投</string>
+    <string name="broadcastTime">播放时长</string>
+    <string name="selectAdress">选择地址</string>
+    <string name="continueAdd">继续添加</string>
 </resources>
