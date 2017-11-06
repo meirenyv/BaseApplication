@@ -102,6 +102,7 @@ public class MyAdsFragment extends BaseFragment_V4 {
                 return fragments.size();
             }
         });
+        mViewPager.setOffscreenPageLimit(3);
         mViewPager.setCurrentItem(0);
     }
 
