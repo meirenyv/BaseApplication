@@ -52,4 +52,7 @@
     <string name="NoUse">无可用</string>
     <string name="addmoney">立即支付</string>
     <string name="ShoppingCart">购物车</string>
+    <string name="advertising">投放广告</string>
+    <string name="beginTime">开始时间</string>
+    <string name="closeTime">结束时间</string>
 </resources>

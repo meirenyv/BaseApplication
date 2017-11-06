@@ -54,5 +54,8 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.2.0'
     //下拉框
     //RefreshLayout that support for OverScroll and better than iOS. 支持下拉刷新和上拉加载的RefreshLayout,自带越界回弹效果，支持RecyclerView,AbsListView,ScrollView,WebView
+    //时间日期选择器
+    compile 'com.code-troopers.betterpickers:library:3.1.0'
+
     compile 'com.lcodecorex:tkrefreshlayout:1.0.6'
 }

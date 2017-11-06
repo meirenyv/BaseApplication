@@ -1,9 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="lzhs.com.baseapplication.module.menu.myads.putin.PutInStyleActivity">
+    <lzhs.com.library.widget.views.TitleBar
+        android:id="@+id/UseTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftColor="@color/white"
+        app:titleText="@string/advertising" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="99px"
+        >
+        <TextView
+            android:id="@+id/te"
+            style="@style/TextViewStytle"
+            android:layout_width="157px"
+            android:text="@string/TextAdStyle" />
 
-</android.support.constraint.ConstraintLayout>
+        <RadioGroup
+            android:paddingRight="104px"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/mRadioImag"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_rb"
+                android:paddingRight="103px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/picture"
+                android:textColor="#97A9C6" />
+
+            <RadioButton
+                android:id="@+id/mRadioVido"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/video"
+                android:textColor="#97A9C6" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58px"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            style="@style/TextViewStytle"
+            android:layout_width="wrap_content"
+            android:text="@string/beginTime" />
+        <TextView
+            android:layout_weight="1"
+            style="@style/TextViewStytle"
+            android:layout_width="wrap_content"
+            android:text="@string/TextAdStyle" />
+        <TextView
+            android:layout_weight="1"
+            style="@style/TextViewStytle"
+            android:layout_width="wrap_content"
+            android:text="@string/closeTime" />
+        <TextView
+            android:layout_weight="1"
+            style="@style/TextViewStytle"
+            android:layout_width="wrap_content"
+            android:text="@string/TextAdStyle" />
+    </LinearLayout>
+    <View
+        style="@style/LineStyle" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="117px">
+
+        <TextView
+            style="@style/TextViewStytle"
+            android:layout_width="157px"
+            android:text="@string/TextADIndustrry" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="104px"
+                android:text="加急"
+                android:textColor="#97A9C6" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>
