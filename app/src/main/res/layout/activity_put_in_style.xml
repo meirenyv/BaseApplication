@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoLinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="lzhs.com.baseapplication.module.menu.myads.putin.PutInStyleActivity">
+
     <lzhs.com.library.widget.views.TitleBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:leftColor="@color/white"
         app:titleText="@string/advertising" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="99px"
-        >
+        android:layout_height="99px">
+
         <TextView
 
             style="@style/TextViewStytle"
@@ -24,30 +25,30 @@
 
         <RadioGroup
             android:id="@+id/RGADstyle"
-            android:paddingRight="104px"
-            android:gravity="right"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:paddingRight="104px">
 
             <RadioButton
                 android:id="@+id/mRBCommon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:button="@null"
                 android:drawableLeft="@drawable/selector_rb"
                 android:paddingRight="103px"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/common"
                 android:textColor="#97A9C6" />
 
             <RadioButton
                 android:id="@+id/mRBputinByMyself"
-                android:button="@null"
-                android:drawableLeft="@drawable/selector_rb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:button="@null"
                 android:checked="false"
+                android:drawableLeft="@drawable/selector_rb"
                 android:text="@string/putinByMyself"
                 android:textColor="#97A9C6" />
         </RadioGroup>
@@ -55,81 +56,90 @@
     </LinearLayout>
 
     <LinearLayout
-        android:visibility="gone"
         android:id="@+id/mLinStartAndEndtime"
-        android:layout_marginTop="81px"
         android:layout_width="match_parent"
         android:layout_height="58px"
-        android:orientation="horizontal">
+        android:layout_marginTop="81px"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
         <TextView
 
             style="@style/TextViewStytle"
             android:layout_width="157px"
             android:text="@string/beginTime" />
+
         <RelativeLayout
-            android:gravity="center"
+            android:id="@+id/mRLBeginTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/selector_mlinearlayout"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:gravity="center">
+
             <TextView
-                android:layout_centerHorizontal="true"
                 android:id="@+id/fvjjv"
-                android:text="2017_07-22"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
                 style="@style/TextViewStytle"
-                />
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                tools:text="2017_07-22" />
+
             <ImageView
 
-                android:layout_alignRight="@id/fvjjv"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
+                style="@style/ImageViewStyle"
                 android:layout_width="25px"
                 android:layout_height="17px"
-                android:src="@mipmap/login_logo"
-                style="@style/ImageViewStyle" />
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@id/fvjjv"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/login_logo" />
         </RelativeLayout>
 
         <TextView
-            android:layout_width="157px"
             style="@style/TextViewStytle"
+            android:layout_width="157px"
             android:text="@string/closeTime" />
+
         <RelativeLayout
-            android:gravity="center"
+            android:id="@+id/mRLEndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/selector_mlinearlayout"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:gravity="center">
+
             <TextView
-                android:layout_centerHorizontal="true"
                 android:id="@+id/fvjjc"
-                android:text="2017_07-22"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
                 style="@style/TextViewStytle"
-                />
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                tools:text="2017_07-22" />
+
             <ImageView
-                android:layout_alignRight="@id/fvjjc"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
+                style="@style/ImageViewStyle"
                 android:layout_width="25px"
                 android:layout_height="17px"
-                android:src="@mipmap/login_logo"
-                style="@style/ImageViewStyle" />
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@id/fvjjc"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/login_logo" />
         </RelativeLayout>
     </LinearLayout>
+
     <TextView
-        android:visibility="gone"
         android:id="@+id/mTextPutinDates"
         style="@style/TextViewStytle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18px"
         android:gravity="left|center_vertical"
-        android:text="@string/putindate" />
-    <View
-        style="@style/LineStyle" />
+        android:text="@string/putindate"
+        android:textSize="18px"
+        android:visibility="gone" />
+
+    <View style="@style/LineStyle" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="117px">
@@ -147,128 +157,144 @@
 
             <CheckBox
                 android:id="@+id/CKSeleck"
-                android:button="@null"
-                android:drawableLeft="@drawable/selector_rb"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="104px"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_rb"
                 android:text="@string/select"
                 android:textColor="#97A9C6" />
         </RelativeLayout>
 
 
     </LinearLayout>
+
     <LinearLayout
         android:visibility="gone"
         android:id="@+id/mLinCallWaitingTime"
-        android:layout_marginTop="79px"
         android:layout_width="match_parent"
         android:layout_height="58px"
+        android:layout_marginTop="79px"
         android:orientation="horizontal">
+
         <TextView
             style="@style/TextViewStytle"
             android:layout_width="157px"
             android:text="@string/beginTime" />
+
         <RelativeLayout
-            android:gravity="center"
+            android:id="@+id/RelativeCallWaitingCalender"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/selector_mlinearlayout"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:gravity="center">
+
             <TextView
-                android:layout_centerHorizontal="true"
                 android:id="@+id/mTextWaitBegin"
-                android:text="2017_07-22"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
                 style="@style/TextViewStytle"
-                />
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                tools:text="2017_07-22" />
+
             <ImageView
-                android:layout_alignRight="@id/mTextWaitBegin"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
+                style="@style/ImageViewStyle"
                 android:layout_width="25px"
                 android:layout_height="17px"
-                android:src="@mipmap/login_logo"
-                style="@style/ImageViewStyle" />
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@id/mTextWaitBegin"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/login_logo" />
         </RelativeLayout>
 
         <TextView
-            android:visibility="invisible"
-            android:layout_width="157px"
             style="@style/TextViewStytle"
-           />
-        <RelativeLayout
+            android:layout_width="157px"
+            android:visibility="invisible" />
 
-          android:gravity="center"  android:layout_weight="1"
-            android:background="@drawable/selector_mlinearlayout"
+        <RelativeLayout
+            android:id="@+id/Relativehour"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_mlinearlayout"
+            android:gravity="center">
+
             <TextView
-                android:layout_centerHorizontal="true"
                 android:id="@+id/mTextWaitBeginHour"
-                android:text="23:00"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
                 style="@style/TextViewStytle"
-                />
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:text="23:00" />
+
             <ImageView
-                android:layout_alignRight="@id/mTextWaitBeginHour"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
+                style="@style/ImageViewStyle"
                 android:layout_width="25px"
                 android:layout_height="17px"
-                android:src="@mipmap/login_logo"
-                style="@style/ImageViewStyle" />
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@id/mTextWaitBeginHour"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/login_logo" />
         </RelativeLayout>
     </LinearLayout>
+
     <LinearLayout
-        android:visibility="gone"
         android:id="@+id/mLinCallWaitingSelectTime"
-        android:layout_marginTop="65px"
         android:layout_width="match_parent"
         android:layout_height="58px"
-        android:orientation="horizontal">
+        android:layout_marginTop="65px"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
         <TextView
             style="@style/TextViewStytle"
             android:layout_width="157px"
-            android:text="@string/broadcastTime"/>
+            android:text="@string/broadcastTime" />
+
         <RadioGroup
-            android:orientation="horizontal"
-            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:gravity="center"
+            android:orientation="horizontal">
+
             <RadioButton
                 android:id="@+id/RBfifteenminute"
-                android:checked="true"
-                android:text="@string/fifteenminute"
+                style="@style/RadioButtonViewPStyle"
                 android:layout_weight="1"
-                style="@style/RadioButtonViewPStyle"/>
+                android:checked="true"
+                android:text="@string/fifteenminute" />
+
             <RadioButton
                 android:id="@+id/RBthirtyminute"
-                android:text="@string/thirtyminute"
+                style="@style/RadioButtonViewPStyle"
                 android:layout_weight="1"
-                style="@style/RadioButtonViewPStyle"/>
+                android:text="@string/thirtyminute" />
+
             <RadioButton
                 android:id="@+id/RBfortyfiveminute"
-                android:text="@string/fortyfiveminute"
+                style="@style/RadioButtonViewPStyle"
                 android:layout_weight="1"
-                style="@style/RadioButtonViewPStyle"/>
+                android:text="@string/fortyfiveminute" />
+
             <RadioButton
                 android:id="@+id/RBsixtyminute"
-                android:text="@string/sixtyminute"
+                style="@style/RadioButtonViewPStyle"
                 android:layout_weight="1"
-                style="@style/RadioButtonViewPStyle"/>
+                android:text="@string/sixtyminute" />
         </RadioGroup>
     </LinearLayout>
+
     <View style="@style/LineStyle" />
+
     <Button
         android:id="@+id/BTSelectAddress"
+        style="@style/StyleButtonCommon"
         android:layout_marginTop="50px"
         android:background="@drawable/shap_btn_use"
-        android:text="@string/selectAdress"
-       style="@style/StyleButtonCommon"/>
+        android:text="@string/selectAdress" />
 </com.zhy.autolayout.AutoLinearLayout>

@@ -67,4 +67,6 @@
     <string name="broadcastTime">播放时长</string>
     <string name="selectAdress">选择地址</string>
     <string name="continueAdd">继续添加</string>
+    <string name="radial_time_picker_result_value">%1$d:%2$d</string>
+    <string name="dialog_dismissed">Dialog dismissed</string>
 </resources>

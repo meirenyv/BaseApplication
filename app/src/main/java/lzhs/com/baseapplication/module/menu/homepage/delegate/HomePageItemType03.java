@@ -29,7 +29,7 @@ public class HomePageItemType03 implements ItemViewDelegate<HomePageItemBean> {
 
     @Override
     public boolean isForViewType(HomePageItemBean item, int position) {
-        return item.getItemType()==2;
+        return item.getItemType()==1;
     }
 
     @Override

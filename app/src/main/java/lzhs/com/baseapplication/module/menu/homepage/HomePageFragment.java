@@ -19,7 +19,6 @@ import butterknife.Unbinder;
 import lzhs.com.baseapplication.R;
 import lzhs.com.baseapplication.module.menu.homepage.bean.HomePageItemBean;
 import lzhs.com.baseapplication.module.menu.homepage.delegate.HomePageItemType01;
-import lzhs.com.baseapplication.module.menu.homepage.delegate.HomePageItemType02;
 import lzhs.com.baseapplication.module.menu.homepage.delegate.HomePageItemType03;
 import lzhs.com.baseapplication.module.menu.homepage.delegate.authentication.AuthenticationActivity;
 import lzhs.com.baseapplication.module.menu.homepage.delegate.type.cleaning.CleaningActivity;
@@ -53,7 +52,7 @@ public class HomePageFragment extends BaseFragment_V4 implements  HomePageOnItem
         super.onCreate(savedInstanceState);
         mDatas.add(new HomePageItemBean(0));
         mDatas.add(new HomePageItemBean(1));
-        mDatas.add(new HomePageItemBean(2));
+       // mDatas.add(new HomePageItemBean(2));
     }
 
 
@@ -72,7 +71,7 @@ public class HomePageFragment extends BaseFragment_V4 implements  HomePageOnItem
 
         MultiItemTypeAdapter adapter=new MultiItemTypeAdapter(getContext(),mDatas);
         adapter.addItemViewDelegate(0xa1,new HomePageItemType01(this));
-        adapter.addItemViewDelegate(0xa2,new HomePageItemType02(this,this));
+      //  adapter.addItemViewDelegate(0xa2,new HomePageItemType02(this,this));
         adapter.addItemViewDelegate(0xa3,new HomePageItemType03(this));
         mRecyclerView.setAdapter(adapter);
         homeTitleBar.setOnClickToRight(new View.OnClickListener() {
