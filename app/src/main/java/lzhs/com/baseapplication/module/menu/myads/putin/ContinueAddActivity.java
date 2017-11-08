@@ -78,12 +78,12 @@ public class ContinueAddActivity extends BaseActivity {
         mMultipleStatusView.showLoading();//显示加载中视图
         mRVshopinglist.setLayoutManager(new LinearLayoutManager(this));
         mAdapter=new CommonAdapter<ShoppingCartBean>(this, R.layout.item_shoppingcart_layout,list){
-
             @Override
             protected void convert(ViewHolder holder, ShoppingCartBean bean, int position) {
                 holder.setText(R.id.mTextShowName,bean.getName());
             }
         };
+        mRVshopinglist.setAdapter(mAdapter);
 
     }
 }
