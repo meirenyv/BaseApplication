@@ -67,6 +67,7 @@ public class ContinueAddActivity extends BaseActivity {
         initView();
     }
 
+
     private void initView() {
         mMultipleStatusView.showLoading();//显示加载中视图
         mRVshopinglist.setLayoutManager(new LinearLayoutManager(this));
