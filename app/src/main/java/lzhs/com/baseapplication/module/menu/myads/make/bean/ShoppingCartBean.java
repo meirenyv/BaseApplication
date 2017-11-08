@@ -7,12 +7,11 @@ package lzhs.com.baseapplication.module.menu.myads.make.bean;
 public class ShoppingCartBean {
 
 
-
-        private String name;
-        private String address;
-        private String screens;
-        private String Price;
-        private  String detialOthes;
+    private String name;
+    private String address;
+    private String screens;
+    private String Price;
+    private String detialOthes;
 
     public String getName() {
         return name;
@@ -45,7 +44,6 @@ public class ShoppingCartBean {
     public void setPrice(String price) {
         Price = price;
     }
-
 
 
     public String getDetialOthes() {

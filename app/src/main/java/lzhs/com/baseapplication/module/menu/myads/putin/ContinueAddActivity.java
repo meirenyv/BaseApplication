@@ -39,7 +39,13 @@ public class ContinueAddActivity extends BaseActivity {
     @BindView(R.id.mMultipleStatusView)
     MultipleStatusView mMultipleStatusView;
     CommonAdapter mAdapter = null;
-    private List<ShoppingCartBean>list=new ArrayList<>();
+    private List<ShoppingCartBean>list=new ArrayList<>();{
+        for (int i = 0; i < 10; i++) {
+            ShoppingCartBean bean =new ShoppingCartBean();
+            bean.setName(String.format("该数据为第%d条数据",i));
+            list.add(bean);
+        }
+    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -74,8 +80,8 @@ public class ContinueAddActivity extends BaseActivity {
         mAdapter=new CommonAdapter<ShoppingCartBean>(this, R.layout.item_shoppingcart_layout,list){
 
             @Override
-            protected void convert(ViewHolder holder, ShoppingCartBean shoppingCartBean, int position) {
-                shoppingCartBean.getPrice();
+            protected void convert(ViewHolder holder, ShoppingCartBean bean, int position) {
+                holder.setText(R.id.mTextShowName,bean.getName());
             }
         };
 
