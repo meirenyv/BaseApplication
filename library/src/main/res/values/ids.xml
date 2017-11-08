@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="MultipleStatusView_Empty_TextView" type="id"/>
+    <item name="MultipleStatusView_Empty_ImageView" type="id" />
+    <item name="MultipleStatusView_Error_TextView" type="id"/>
+    <item name="MultipleStatusView_Error_ImageView" type="id"/>
+    <item name="MultipleStatusView_Loading_TextView" type="id"/>
+    <item name="MultipleStatusView_Loading_Progress" type="id"/>
+    <item name="MultipleStatusViewContent" type="id" />
+</resources>

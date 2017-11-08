@@ -2,7 +2,7 @@
 <resources>
 
     <color name="textColor01">@android:color/white</color>
-
+    <color name="MultipleStatusView_TextView_textColor">#a9b7b7</color>
     <color name="statusColor">@color/royalblue</color>
     <color name="white">#FFFFFF</color> <!--白色 -->
     <color name="ivory">#FFFFF0</color> <!--象牙色 -->

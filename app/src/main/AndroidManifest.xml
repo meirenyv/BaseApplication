@@ -43,7 +43,8 @@
         <activity android:name=".module.menu.myads.putin.PutInStyleActivity" />
         <!-- 购物车之立即结算 -->
         <activity android:name=".module.menu.homepage.delegate.type.cleaning.CleaningActivity" />
-        <activity android:name=".module.menu.myads.putin.ContinueAddActivity"></activity>
-    </application>
+        <!--继续投放 -->
+         <activity android:name=".module.menu.myads.putin.ContinueAddActivity"></activity>
+     </application>
 
-</manifest>
+ </manifest>

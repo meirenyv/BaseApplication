@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="202px"
+    android:maxHeight="202px"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28px"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="蓝光凯丽香江"
+                    android:textColor="@android:color/black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14px"
+                    android:text="地址：北京某屯某旮旯洞拐洞拐洞洞拐"
+                    android:textColor="#6A83A1"
+                    android:textSize="18px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8px"
+                    android:text="2892户，入住率96%，中置3环"
+                    android:textSize="18px" />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:id="@+id/mViewSubmit"
+                android:layout_width="201px"
+                android:layout_height="41px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="7px"
+                android:background="@drawable/draw_comm_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25px"
+                    android:layout_height="25px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="33px"
+                    android:src="@mipmap/icon_mine_unselected" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="114px"
+                    android:text="@string/detialAddress"
+                    android:textColor="#DCDCDC" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="35px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33px"
+                android:text="单价：￥22"
+                android:textColor="#FF6060"
+                android:textSize="24px" />
+            <CheckBox
+                android:textSize="23px"
+                android:id="@+id/CKSeleck"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_rb"
+                android:text="@string/select"
+                android:textColor="#97A9C6"
+                android:layout_width="201px"
+                android:layout_alignParentRight="true"
+                android:layout_height="41px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="35px"
+                android:layout_marginBottom="7px"
+                android:gravity="center"
+                android:orientation="horizontal"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#E9EEF5" />
+
+</LinearLayout>

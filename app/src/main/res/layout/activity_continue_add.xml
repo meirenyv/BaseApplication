@@ -4,10 +4,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="lzhs.com.baseapplication.module.menu.myads.putin.ContinueAddActivity">
     <lzhs.com.library.widget.views.TitleBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:leftColor="@color/white"
+        app:rightColor="@color/white"
+        app:rightIsShow="true"
+        app:rightText="结算"
         app:titleText="@string/continueAdd" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="20px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/RBrange"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:drawableRight="@drawable/rbbg"
+            android:gravity="center"
+            android:drawablePadding="-30dp"
+            android:paddingRight="40dp"
+            android:text="@string/range"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/RBsort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableRight="@drawable/rbbg"
+            android:gravity="center"
+            android:drawablePadding="-30dp"
+            android:paddingRight="40dp"
+            android:text="@string/sort"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/RBorder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableRight="@drawable/rbbg"
+            android:gravity="center"
+            android:drawablePadding="-30dp"
+            android:paddingRight="40dp"
+            android:text="@string/order"
+            android:textSize="13sp" />
+    </RadioGroup>
+    <lzhs.com.library.widget.views.stateView.MultipleStatusView
+        android:id="@+id/mMultipleStatusView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@id/MultipleStatusViewContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+                android:id="@+id/mTwinklingRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ededed">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mRVshopinglist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10px"
+                    android:background="#ededed" />
+            </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+        </LinearLayout>
+    </lzhs.com.library.widget.views.stateView.MultipleStatusView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="86px">
+        <TextView
+            android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            style="@style/TextViewStytle"
+            android:background="@drawable/selector_addscreen"
+           android:text="@string/addshopping"
+            android:layout_width="225px"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
 </com.zhy.autolayout.AutoLinearLayout >
