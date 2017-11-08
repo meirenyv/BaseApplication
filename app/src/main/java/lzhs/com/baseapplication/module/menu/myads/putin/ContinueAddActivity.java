@@ -39,13 +39,7 @@ public class ContinueAddActivity extends BaseActivity {
     @BindView(R.id.mMultipleStatusView)
     MultipleStatusView mMultipleStatusView;
     CommonAdapter mAdapter = null;
-    private List<ShoppingCartBean>list=new ArrayList<>();{
-        for (int i = 0; i < 10; i++) {
-            ShoppingCartBean bean =new ShoppingCartBean();
-            bean.setName(String.format("该数据为第%d条数据",i));
-            list.add(bean);
-        }
-    }
+    private List<ShoppingCartBean>list=new ArrayList<>();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -59,7 +53,7 @@ public class ContinueAddActivity extends BaseActivity {
     private void init() {
         for (int i = 0; i <5 ; i++) {
             ShoppingCartBean shoppingCartBean=new ShoppingCartBean();
-            shoppingCartBean.setName("蓝光.凯丽香江");
+            shoppingCartBean.setName("蓝光.凯丽香江    "+i);
             shoppingCartBean.setPrice("22￥");
             shoppingCartBean.setScreens("屏幕组1组(拥有40个屏幕)");
             shoppingCartBean.setDetialOthes("289户");
