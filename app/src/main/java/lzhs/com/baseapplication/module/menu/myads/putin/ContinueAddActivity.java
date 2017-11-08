@@ -69,7 +69,7 @@ public class ContinueAddActivity extends BaseActivity {
 
 
     private void initView() {
-        mMultipleStatusView.showLoading();//显示加载中视图
+        mMultipleStatusView.showContent();
         mRVshopinglist.setLayoutManager(new LinearLayoutManager(this));
         mAdapter=new CommonAdapter<ShoppingCartBean>(this, R.layout.item_shoppingcart_layout,list){
             @Override

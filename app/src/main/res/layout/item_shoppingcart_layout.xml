@@ -97,7 +97,6 @@
                 android:textColor="#FF6060"
                 android:textSize="24px" />
             <CheckBox
-
                 android:textSize="23px"
                 android:id="@+id/CKSeleck"
                 android:button="@null"
