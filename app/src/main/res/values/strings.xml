@@ -74,5 +74,6 @@
     <string name="order">排序</string>
     <string name="detialAddress">查看详情位置</string>
     <string name="addshopping">加入购物车</string>
+    <string name="endtime">结束日期</string>
 
 </resources>

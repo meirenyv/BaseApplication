@@ -61,7 +61,7 @@
         android:layout_height="58px"
         android:layout_marginTop="81px"
         android:orientation="horizontal"
-        android:visibility="gone">
+        >
 
         <TextView
 
@@ -83,7 +83,8 @@
                 android:layout_width="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_weight="1"
-                tools:text="2017_07-22" />
+                android:textColor="@color/red"
+                android:text="@string/beginTime" />
 
             <ImageView
 
@@ -115,7 +116,7 @@
                 android:layout_width="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_weight="1"
-                tools:text="2017_07-22" />
+                tools:text="@string/endtime" />
 
             <ImageView
                 style="@style/ImageViewStyle"

@@ -1,8 +1,6 @@
 package lzhs.com.baseapplication.module.menu.myads.putin;
 
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -17,25 +15,21 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.codetroopers.betterpickers.OnDialogDismissListener;
-import com.codetroopers.betterpickers.calendardatepicker.CalendarDatePickerDialogFragment;
-import com.codetroopers.betterpickers.calendardatepicker.MonthAdapter;
-import com.codetroopers.betterpickers.radialtimepicker.RadialTimePickerDialogFragment;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import lzhs.com.baseapplication.R;
 import lzhs.com.library.base.BaseActivity;
 import lzhs.com.library.utils.ActivityUtil;
+import lzhs.com.library.utils.tools.DateChooseUtils;
 
 /**
  * 投放广告类型选择： 普通，自投 ，插播
  */
-public class PutInStyleActivity extends BaseActivity implements CalendarDatePickerDialogFragment.OnDateSetListener,
+public class PutInStyleActivity extends BaseActivity implements
         CompoundButton.OnCheckedChangeListener,
         RadioGroup.OnCheckedChangeListener
-        , RadialTimePickerDialogFragment.OnTimeSetListener, OnDialogDismissListener {
+    {
 
     @BindView(R.id.mRBCommon)
     RadioButton mRBCommon;
@@ -95,14 +89,6 @@ public class PutInStyleActivity extends BaseActivity implements CalendarDatePick
         RGADstyle.setOnCheckedChangeListener(this);
         CKSeleck.setOnCheckedChangeListener(this);
     }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        RadialTimePickerDialogFragment rtpd = (RadialTimePickerDialogFragment) getSupportFragmentManager().findFragmentByTag(FRAG_TAG_TIME_PICKER);
-        if (rtpd != null) rtpd.setOnTimeSetListener(this);
-    }
-
     @Override
     public void onCheckedChanged(RadioGroup radioGroup, int i) {
         switch (i) {
@@ -141,94 +127,49 @@ public class PutInStyleActivity extends BaseActivity implements CalendarDatePick
 
     @OnClick({R.id.mRLBeginTime, R.id.mRLEndTime, R.id.BTSelectAddress, R.id.Relativehour, R.id.RelativeCallWaitingCalender})
     public void onViewClicked(View view) {
-        switch (view.getId()) {
+        switch ( view.getId()) {
             case R.id.mRLBeginTime://普通或者自投的开始日期
-                CalendarDatePickerDialogFragment cdp = new CalendarDatePickerDialogFragment()
-                        .setOnDateSetListener(PutInStyleActivity.this)
-                        .setFirstDayOfWeek(Calendar.SUNDAY)
-                        .setPreselectedDate(2017, 8, 15)
-                        .setDoneText("确认")
-                        //.setDateRange(october,null)//设置对话框的范围，以在特定日期内。在therange之外的数年和数月没有显示，在范围之外的日子是可见的，但不能选择。
+                Long longTime=System.currentTimeMillis();
+                Log.i("info","开始时间："+fvjjv.getText().toString());
+            DateChooseUtils.chooseDate(1,this, longTime, fvjjv.getText().toString(), new DateChooseUtils.GetDateInfoListenter() {
+                @Override
+                public void getDateInfo(String date_info) {
+                    fvjjv.setText(date_info);
+                }
+            });
 
-                        .setCancelText("取消");
-                cdp.show(getSupportFragmentManager(), FRAG_TAG_DATE_PICKER);
-                TAG = 1;
                 break;
             case R.id.mRLEndTime://普通或者自投的结束日期
                 String startTime = fvjjv.getText().toString();
-                String[] temp = null;
-                temp = startTime.split("-");
-
-                // etShow.setText(temp[0] + " linc " + temp[1]);
-                if (null != startTime) {
-                    CalendarDatePickerDialogFragment cdpend = new CalendarDatePickerDialogFragment()
-                            .setOnDateSetListener(PutInStyleActivity.this)
-                            .setFirstDayOfWeek(Calendar.SUNDAY)
-                            .setPreselectedDate(Integer.parseInt(temp[0]), Integer.parseInt(temp[1]) - 1, Integer.parseInt(temp[2]))//日历默认选中时间 实际月份比+1
-                            .setDoneText("确认")
-                            .setDateRange(new MonthAdapter.CalendarDay(Integer.parseInt(temp[0]), Integer.parseInt(temp[1]) - 1, Integer.parseInt(temp[2])), null)//设置对话框的范围，以在特定日期内。在therange之外的数年和数月没有显示，在范围之外的日子是可见的，但不能选择。
-
-                            .setCancelText("取消");
-                    cdpend.show(getSupportFragmentManager(), FRAG_TAG_DATE_PICKER);
-                }
-
-                TAG = 2;
+            if (!startTime.equals("开始时间")){
+                DateChooseUtils.chooseDate(2,this, System.currentTimeMillis(), startTime, new DateChooseUtils.GetDateInfoListenter() {
+                    @Override
+                    public void getDateInfo(String date_info) {
+                        fvjjc.setText(date_info);
+                    }
+                });
+            } else{
+                Toast.makeText(this, "请选择起始日期", Toast.LENGTH_LONG).show();
+            }
                 break;
             case R.id.RelativeCallWaitingCalender://插播起始日期选择
-                CalendarDatePickerDialogFragment calendarDatePickerDialogFragment = new CalendarDatePickerDialogFragment()
-                        .setOnDateSetListener(PutInStyleActivity.this)
-                        .setFirstDayOfWeek(Calendar.SUNDAY)
-                        .setPreselectedDate(2017, 8, 15)
-                        .setDoneText("确认")
-                        .setCancelText("取消");
-                calendarDatePickerDialogFragment.show(getSupportFragmentManager(), FRAG_TAG_DATE_PICKER);
+
                 TAG=3;
                 break;
             case R.id.BTSelectAddress://  跳转到继续添加界面
                 startActivity(new Intent(this, ContinueAddActivity.class));
                 break;
             case R.id.Relativehour:
-                RadialTimePickerDialogFragment rtpd = new RadialTimePickerDialogFragment()
-                        .setOnTimeSetListener(PutInStyleActivity.this)
-                        .setOnDismissListener(PutInStyleActivity.this);
-                rtpd.show(getSupportFragmentManager(), FRAG_TAG_TIME_PICKER);
+                DateChooseUtils.TimePicker(this, new DateChooseUtils.GetTimeInfoListenter() {
+                    @Override
+                    public void getTimeInfo(String time_info) {
+                        mTextWaitBeginHour.setText(time_info);
+                    }
+                });
                 break;
         }
     }
 
-    //日历选择器
-    @Override
-    public void onDateSet(CalendarDatePickerDialogFragment dialog, int year, int monthOfYear, int dayOfMonth) {
-        String dateStr = year + "-" + (monthOfYear + 1) + "-" + dayOfMonth;
-        if (null != dateStr) {
-            switch (TAG) {
-                case 1:
-                    fvjjv.setText(dateStr);
-                    break;
-                case 2:
-                    // TODO: 2017/11/7 判断开始时间是否为空
-                    if (fvjjv.getText().toString().equals("") || (null == fvjjv.getText().toString())) {
-                        mRLEndTime.setClickable(false);
-                        Toast.makeText(this, "请选择起始日期", Toast.LENGTH_SHORT).show();
-                    } else {
-                        fvjjc.setText(dateStr);
-                    }
-                    break;
-                case 3:
-                    mTextWaitBegin.setText(dateStr);
-            }
-        }
-    }
 
-    //时间选择器
-    @Override
-    public void onDialogDismiss(DialogInterface dialoginterface) {
-        // mTextWaitBeginHour.setText(R.string.dialog_dismissed);
-    }
 
-    @Override
-    public void onTimeSet(RadialTimePickerDialogFragment dialog, int hourOfDay, int minute) {
-        Log.i("====================", "onTimeSet: " + hourOfDay + minute);
-        mTextWaitBeginHour.setText(getString(R.string.radial_time_picker_result_value, hourOfDay, minute));
-    }
 }
